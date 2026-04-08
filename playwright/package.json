@@ -1,0 +1,17 @@
+{
+  "name": "tactics-board-e2e",
+  "version": "1.0.0",
+  "description": "Playwright e2e tests for Tactics Board",
+  "scripts": {
+    "build:e2e": "cd .. && flutter build web --dart-define=E2E_TEST=true",
+    "test": "npm run build:e2e && playwright test",
+    "test:norebuild": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "serve": "^14.2.6"
+  }
+}

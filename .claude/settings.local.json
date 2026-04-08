@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep:*)",
+      "mcp__figma__whoami",
+      "mcp__figma__create_new_file",
+      "mcp__figma__use_figma",
+      "mcp__figma__get_screenshot",
+      "mcp__figma__get_design_context",
+      "Bash(wc -l /d/FF_projects/tactics_board/lib/login_page.dart /d/FF_projects/tactics_board/lib/tactics_board_page.dart /d/FF_projects/tactics_board/lib/widgets/*.dart)",
+      "Bash(flutter analyze:*)",
+      "Bash(find d:/FF_projects/tactics_board -type f -name *.ttf -o -name *.otf -o -name *.woff*)",
+      "Bash(find d:/FF_projects/tactics_board -maxdepth 3 -name *.yaml -o -name *.yml)",
+      "Bash(grep -r \"fontFamily\\\\|fonts:\" d:/FF_projects/tactics_board --include=*.yaml --include=*.yml)",
+      "Bash(flutter clean:*)",
+      "Bash(flutter pub:*)",
+      "Bash(claude mcp:*)",
+      "Bash(dart analyze:*)",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__execute_sql",
+      "WebFetch(domain:www.premierleague.com)",
+      "WebFetch(domain:fantasy.premierleague.com)",
+      "mcp__supabase__apply_migration",
+      "Bash(sed -i 's/\\\\.withOpacity\\(\\\\\\([^\\)]*\\\\\\)\\)/.withValues\\(alpha: \\\\1\\)/g' d:/FF_projects/tactics_board/lib/dashboard_page.dart)",
+      "Bash(sed -i 's/Matrix4\\\\.identity\\(\\)\\\\.\\\\.translate\\(-2\\\\.0, -2\\\\.0\\)/Matrix4.identity\\(\\)..translateByDouble\\(-2.0, -2.0, 0\\)/g' d:/FF_projects/tactics_board/lib/dashboard_page.dart)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
+}
